@@ -1,0 +1,20 @@
+.homePageMainSectionNav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.login{
+    margin-bottom: 40px;
+    font-size:1.4em;
+    a:last-of-type{
+        border: 1px solid $color-accent;
+    }
+}
+
+.navBar{
+    a{
+        font-size: 1.15em;
+        padding: 10px 7px;
+    }
+}
