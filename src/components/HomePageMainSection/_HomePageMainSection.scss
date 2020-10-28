@@ -1,3 +1,9 @@
 .homePageMainSection{
     margin: 30px 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    .mainOrnament{
+        margin-top: 40px;
+    }
 }

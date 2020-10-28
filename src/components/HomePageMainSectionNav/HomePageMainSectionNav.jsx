@@ -6,8 +6,8 @@ function HomePageMainSectionNav() {
   return (
     <nav className="homePageMainSectionNav">
       <div className='login'>
-        <MainButton text="Zaloguj" to='/'/>
-        <MainButton text="Załóż konto" to='/'/>
+        <MainButton text="Zaloguj" to='/login'/>
+        <MainButton text="Załóż konto" to='/login'/>
       </div>
       <div className='navBar'>
         <LinkButton text="Start" to='/'/>
