@@ -3,8 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.homePage >   .mainButton {
+  > .mainButton {
     border: 1px solid $color-font;
     display: flex;
     justify-content: center;
@@ -15,4 +14,4 @@
     font-size: 1.7em;
     margin: 20px 0 30px 0;
   }
-
+}

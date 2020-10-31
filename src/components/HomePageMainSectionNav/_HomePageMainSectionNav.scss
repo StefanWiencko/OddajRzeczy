@@ -14,9 +14,16 @@
 }
 
 .navBar{
+    visibility: hidden;
     font-weight: 400;
     a{
         font-size: 1.15rem;
         padding: 10px 7px;
+    }
+}
+
+@media (min-width: 1024px){
+    .navBar{
+        visibility: visible;
     }
 }
