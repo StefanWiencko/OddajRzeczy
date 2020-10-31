@@ -1,9 +1,48 @@
-.homePageMainSection{
-    margin: 30px 10px 0 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content:center ;
+.homePageMainSection {
+  margin: 30px 10px 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding: 30px;
+  .mainOrnament {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .homePageMainSection {
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 760px;
+    padding: 0 30px 0 30px;
+    margin: 0;
+    width: 100%;
+    div {
+      padding: 10px;
+      width: 100%;
+    }
     .mainOrnament{
-        margin-top: 40px;
+        margin-top:100px ;
+        font-size: 3.8em;
+    }
+    .homePageMainSectionImg {
+        width: 0;
+      }
+  }
+}
+
+@media (min-width:1450px){
+    .homePageMainSection{
+        padding: 0 100px 0 0;
+        .homePageMainSectionImg {
+            padding: 0;
+            background: url("../../assets/Home-Hero-Image.jpg") no-repeat;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+            align-self: flex-start;
+            background-position: -470px 0;
+          }
     }
 }

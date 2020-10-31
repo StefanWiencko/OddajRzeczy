@@ -13,5 +13,16 @@
     height: 70px;
     font-size: 1.7em;
     margin: 20px 0 30px 0;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: 1024px) {
+  .homePage {
+    > .mainButton {
+      width: 260px;
+      height: 120px;
+      font-size: 3.6em;
+    }
   }
 }
