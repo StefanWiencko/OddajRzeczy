@@ -1,92 +1,154 @@
 .homePageFormSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 20px 20px 0 20px;
   width: 100%;
   position: relative;
-  .homePageFormSectionForm {
+  .content {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    max-width: 600px;
-    label {
-      color: $color-font;
-      font-weight: 600;
-      font-size: 1.2em;
-    }
-    input,
-    textarea {
-      border: none;
-      border-bottom: 1px solid $color-font;
-      padding: 3px;
-      font-size: 1.3em;
-      resize: none;
-      &::placeholder {
-        color: $color-placeholder;
-      }
-    }
-    .submit {
-      margin-top: 30px;
-      border: 1px solid $color-font;
-      width: 120px;
-      height: 40px;
-      align-self: flex-end;
-    }
-
-    .homePageFormSectionFormPersonalData {
+    .homePageFormSectionForm {
       display: flex;
-      flex-grow: 1;
-      justify-content: space-between;
-      div {
+      flex-direction: column;
+      width: 100%;
+      max-width: 600px;
+      label {
+        color: $color-font;
+        font-weight: 600;
+        font-size: 1.2em;
+      }
+      input,
+      textarea {
+        border: none;
+        border-bottom: 1px solid $color-font;
+        padding: 3px;
+        font-size: 1.3em;
+        resize: none;
+        &::placeholder {
+          color: $color-placeholder;
+        }
+      }
+      .submit {
+        margin-top: 30px;
+        border: 1px solid $color-font;
+        width: 120px;
+        height: 40px;
+        align-self: flex-end;
+      }
+
+      .homePageFormSectionFormPersonalData {
         display: flex;
-        flex-direction: column;
-        width: 49%;
-        input {
-          margin-top: 10px;
-          flex-grow: 1;
+        flex-grow: 1;
+        justify-content: space-between;
+        div {
+          display: flex;
+          flex-direction: column;
+          width: 49%;
+          input {
+            margin-top: 10px;
+            flex-grow: 1;
+          }
+        }
+      }
+      .homePageFormSectionFormTextarea {
+        margin-top: 20px;
+        textarea {
+          text-align: left;
+          margin: 5px 0;
+          width: 100%;
+          height: 80px;
         }
       }
     }
-    .homePageFormSectionFormTextarea {
-      margin-top: 20px;
-      textarea {
-        text-align: left;
-        margin: 5px 0;
-        width: 100%;
-        height: 80px;
-      }
-    }
-  }
-  footer {
-    margin: 50px 0 10px 0;
-    padding: 5px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    h4 {
-      font-family: $font-main;
-      font-weight: normal;
-      font-size: 1em;
-      color: $color-font;
-      align-self: flex-end;
-    }
-    .socials {
+    footer {
+      margin: 50px 0 10px 0;
+      padding: 5px;
+      width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 75px;
-      .facebook {
-        width: 30px;
-        height: 30px;
-        background: url("../../assets/Facebook.svg") no-repeat;
+      h4 {
+        font-family: $font-main;
+        font-weight: normal;
+        font-size: 1em;
+        color: $color-font;
+        align-self: flex-end;
       }
-      .instagram {
-        width: 30px;
-        height: 30px;
-        background: url("../../assets/Instagram.svg") no-repeat;
+      .socials {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 75px;
+        .facebook {
+          width: 30px;
+          height: 30px;
+          background: url("../../assets/Facebook.svg") no-repeat;
+        }
+        .instagram {
+          width: 30px;
+          height: 30px;
+          background: url("../../assets/Instagram.svg") no-repeat;
+        }
       }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .homePageFormSection {
+    height: 950px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 40px 0 0;
+    .content {
+      width: 100%;
+      justify-content: center;
+      padding: 20px;
+      .homePageFormSectionForm {
+        width: 530px;
+        label {
+          font-size: 1.6em;
+        }
+        input,textarea{
+          font-size: 1.9em;
+        }
+        .homePageFormSectionFormTextarea{
+          textarea{
+            height: 120px;
+          }
+        }
+        .submit{
+          font-size: 1.8em;
+          height: 50px;
+          width: 150px;
+        }
+      }
+      footer {
+        position: absolute;
+        width: 50%;
+        margin: 0;
+        bottom: 20px;
+        right: 40px;
+        h4 {
+          font-size: 1.8em;
+        }
+      }
+    }
+    .bg {
+      background: url("../../assets/Background-Contact-Form.jpg") no-repeat;
+      background-position: -420px -52px;
+      width: 130%;
+      height: 100%;
+      opacity: 0.3;
+    }
+  }
+}
+
+@media(min-width:1400px){
+  .homePageFormSection{
+    .bg{
+      background-position: -194px -52px;
     }
   }
 }

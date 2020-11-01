@@ -3,7 +3,7 @@ import HomePageInfoSectionAchivElement from "../HomePageInfoSectionAchivElement/
 
 function HomePageInfoSectionAchiv() {
   return (
-    <div className="homePageInfoSectionAchiv">
+    <div className="homePageInfoSectionAchiv" id="homePageInfoSectionAchiv">
       <HomePageInfoSectionAchivElement
         h2="10"
         h3="ODDANYCH WORKÓW"

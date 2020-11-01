@@ -5,16 +5,16 @@ import LinkButton from "../LinkButton/LinkButton";
 function HomePageMainSectionNav() {
   return (
     <nav className="homePageMainSectionNav">
-      <div className='login'>
-        <MainButton text="Zaloguj" to='/login'/>
-        <MainButton text="Załóż konto" to='/login'/>
+      <div className="login">
+        <MainButton text="Zaloguj" to="/login" />
+        <MainButton text="Załóż konto" to="/login" />
       </div>
-      <div className='navBar'>
-        <LinkButton text="Start" to='/'/>
-        <LinkButton text="O co chodzi?" to='/'/>
-        <LinkButton text="O nas" to='/'/>
-        <LinkButton text="Fundacja i organizacje" to='/'/>
-        <LinkButton text="Kontakt" to='/'/>
+      <div className="navBar">
+        <LinkButton text="Start" to="/" />
+        <LinkButton text="O co chodzi?" to="homePageInfoSectionAchiv" />
+        <LinkButton text="O nas" to="homePageAboutSection" />
+        <LinkButton text="Fundacja i organizacje" to="homePageSupportSection" />
+        <LinkButton text="Kontakt" to="homePageFormSection" />
       </div>
     </nav>
   );

@@ -1,26 +1,28 @@
-.mainOrnament{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .ornamentText{
-        text-align: center;
-        font-weight: 400;
-        font-family: $font-main;
-        color: $color-font;
-        margin-bottom: 40px;
-        font-size: 2.8rem;
-        max-width: 500px;
-    }
-    .ornamentIcon{
-        width: 253px;
-        height: 60px;
-        background: url("../../assets/Decoration.svg") no-repeat;
-    }
+.mainOrnament {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .ornamentText {
+    text-align: center;
+    font-weight: 400;
+    font-family: $font-main;
+    color: $color-font;
+    margin-bottom: 40px;
+    font-size: 2.8em;
+    max-width: 500px;
+  }
+  .ornamentIcon {
+    width: 253px;
+    height: 60px;
+    background: url("../../assets/Decoration.svg") no-repeat;
+  }
 }
 
-@media (max-width:1024px){
-    .mainOrnament{
-        font-size: 3.8em;
+@media (min-width: 1024px) {
+  .mainOrnament {
+    .ornamentText {
+      font-size: 3.8em;
     }
+  }
 }

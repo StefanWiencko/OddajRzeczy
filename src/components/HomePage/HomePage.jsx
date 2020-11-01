@@ -16,7 +16,7 @@ function HomePage() {
       <HomePageAboutSection />
       <HomePageSupportSection />
       <HomePagePaginateSectionElement/>
-      <HomePageFormSection />
+      <HomePageFormSection name="HomePageFormSection" />
     </div>
   );
 }
