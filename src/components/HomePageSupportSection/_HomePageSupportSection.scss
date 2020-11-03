@@ -12,6 +12,11 @@
       font-weight: 400;
       line-height: 25px;
       max-width: 180px;
+      box-sizing: border-box;
+      height: 62px;
+      &.active {
+        border: 1px solid $color-font;
+      }
       &:nth-last-of-type(2) {
         margin: 0 10px;
       }
@@ -24,6 +29,7 @@
     }
   }
   p {
+    height: 100px;
     margin-top: 40px;
     font-weight: 400;
     font-size: 1.2em;

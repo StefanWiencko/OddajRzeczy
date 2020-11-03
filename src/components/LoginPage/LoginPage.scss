@@ -1,0 +1,41 @@
+.loginPage {
+  padding: 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+  .homePageMainSectionNav {
+    .navBar {
+      width: 100%;
+      visibility: visible;
+      display: flex;
+      justify-content: flex-end;
+      a {
+        border: none;
+        font-size: 1em;
+      }
+    }
+  }
+}
+
+@media(min-width:768px){
+    .loginPage{
+        .homePageMainSectionNav{
+            .navBar{
+                a{
+                    font-size: 1.4em;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:1024px){
+    .loginPage{
+        .homePageMainSectionNav{
+            .navBar{
+                a{
+                    font-size: 1.8em;
+                }
+            }
+        }
+    }
+}

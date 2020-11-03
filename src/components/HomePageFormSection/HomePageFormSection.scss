@@ -110,15 +110,16 @@
         label {
           font-size: 1.6em;
         }
-        input,textarea{
+        input,
+        textarea {
           font-size: 1.9em;
         }
-        .homePageFormSectionFormTextarea{
-          textarea{
+        .homePageFormSectionFormTextarea {
+          textarea {
             height: 120px;
           }
         }
-        .submit{
+        .submit {
           font-size: 1.8em;
           height: 50px;
           width: 150px;
@@ -145,9 +146,9 @@
   }
 }
 
-@media(min-width:1400px){
-  .homePageFormSection{
-    .bg{
+@media (min-width: 1400px) {
+  .homePageFormSection {
+    .bg {
       background-position: -194px -52px;
     }
   }

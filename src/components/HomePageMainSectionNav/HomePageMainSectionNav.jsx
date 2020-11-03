@@ -10,7 +10,7 @@ function HomePageMainSectionNav() {
         <MainButton text="Załóż konto" to="/login" />
       </div>
       <div className="navBar">
-        <LinkButton text="Start" to="/" />
+        <MainButton text="Start" to="/" />
         <LinkButton text="O co chodzi?" to="homePageInfoSectionAchiv" />
         <LinkButton text="O nas" to="homePageAboutSection" />
         <LinkButton text="Fundacja i organizacje" to="homePageSupportSection" />
